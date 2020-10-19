@@ -1,7 +1,6 @@
 {
   "expo": {
     "name": "time-capsule-native",
-    "entryPoint": "./App.jsx",
     "slug": "time-capsule-native",
     "version": "1.0.0",
     "orientation": "portrait",
