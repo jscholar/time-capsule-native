@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Home = ({ navigator }) => (
+const Home = () => (
   <View
     style={styles}
   >
