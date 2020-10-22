@@ -1,18 +1,21 @@
 import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
-const TabItem = ({ route, navigation, descriptor }) => {
+const TabItem = ({
+  route,
+  navigation,
+  descriptor,
+  focused,
+}) => {
   const { options } = descriptor;
-  const label = options.tabBarLabel || options.title || route.name;
+  const { tabBarIcon: Icon } = options;
   return (
     <TouchableOpacity
       onPress={() => {
         navigation.jumpTo(route.name);
       }}
     >
-      <Text>
-        {label}
-      </Text>
+      <Icon size={focused && route.name === 'Entry' ? 52 : 24} />
     </TouchableOpacity>
   );
 };

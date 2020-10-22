@@ -21,8 +21,9 @@ const TabBar = ({ state, descriptors, navigation }) => (
         Back
       </Text>
     </TouchableOpacity>
-    { state.routes.map((route) => (
+    { state.routes.map((route, index) => (
       <TabItem
+        focused={state.index === index}
         navigation={navigation}
         key={route.key}
         route={route}
