@@ -18,15 +18,18 @@
         "react-native"
     ],
     "rules": {
-      "react/prop-types": ["off", 
-        { "ignore": [
+      "react/prop-types": ["error", 
+        { 
+          "ignore": [
           "navigator",
           "navigation",
           "state",
           "descriptors",
           "descriptor",
           "route"
-        ]}
+          ],
+          "skipUndeclared": true
+        }
       ]
     }
 }

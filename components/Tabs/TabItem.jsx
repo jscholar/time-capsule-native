@@ -1,5 +1,6 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
 
 const TabItem = ({
   route,
@@ -18,6 +19,14 @@ const TabItem = ({
       <Icon size={focused && route.name === 'Entry' ? 52 : 24} />
     </TouchableOpacity>
   );
+};
+
+TabItem.propTypes = {
+  focused: PropTypes.bool,
+};
+
+TabItem.defaultProps = {
+  focused: false,
 };
 
 export default TabItem;
