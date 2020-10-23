@@ -19,6 +19,7 @@ const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => (
   <Tab.Navigator
+    initialRouteName="Entry"
     tabBar={TabBar}
     backBehavior="history"
     screenOptions={{
