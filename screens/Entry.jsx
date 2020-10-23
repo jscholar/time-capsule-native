@@ -1,11 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View, useWindowDimensions } from 'react-native';
+
+import EntryForm from '../components/Entry/EntryForm';
 
 const Entry = () => (
-  <View>
-    <Text>
-      Entry Screen
-    </Text>
+  <View
+    style={{
+      height: useWindowDimensions().height,
+      backgroundColor: 'rgb(168, 151, 167)',
+    }}
+  >
+    <EntryForm />
   </View>
 );
 
